@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - My Gym</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html">My Gym</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="feedback.html">Feedback</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About us</a>
+            </li>
+          </ul>
+        </div>
+        <a href="login.html" class="login-btn ms-auto" id="loginBtn">Login</a>
+      </div>
+    </nav>
+
+    <!-- About Section -->
+    <div class="about-container" id="about">
+      <div class="typewriter">
+        <h2>About Us</h2>
+      </div>
+      <p class="about-text">
+        Welcome to <strong>My Gym</strong>, where we are passionate about
+        helping you achieve your fitness goals! Our mission is to provide
+        top-notch training, personalized guidance, and a motivating environment
+        to help you stay healthy and strong. Whether you're a beginner or an
+        experienced athlete, we have something for everyone.
+      </p>
+      <p class="about-text">
+        We believe that fitness is a journey, and we are here to support you
+        every step of the way. Join us today and become a part of our growing
+        fitness community!
+      </p>
+    </div>
+
+    <!-- Team Section -->
+    <div class="team-container" id="team">
+      <h2>Meet Our Team</h2>
+      <div class="row" id="teamMembers">
+        <!-- Team members will be loaded dynamically -->
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="about.js"></script>
+  </body>
+</html>

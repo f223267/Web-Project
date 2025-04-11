@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback - My Gym</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="feedback.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html">My Gym</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="feedback.html">Feedback</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About us</a>
+            </li>
+          </ul>
+        </div>
+        <a href="login.html" class="login-btn ms-auto" id="loginBtn">Login</a>
+      </div>
+    </nav>
+
+    <!-- Feedback Form -->
+    <div class="container mt-4">
+      <h2>Feedback</h2>
+      <form id="feedbackForm">
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="fullName"
+            placeholder="Full Name"
+            required
+          />
+          <div class="invalid-feedback">Please enter your name</div>
+        </div>
+        <div class="mb-3">
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Email"
+            required
+          />
+          <div class="invalid-feedback">Please enter a valid email</div>
+        </div>
+        <div class="mb-3">
+          <select class="form-control" id="rating" required>
+            <option value="">Rate Us (1-5)</option>
+            <option value="1">1 - Poor</option>
+            <option value="2">2 - Fair</option>
+            <option value="3">3 - Good</option>
+            <option value="4">4 - Very Good</option>
+            <option value="5">5 - Excellent</option>
+          </select>
+          <div class="invalid-feedback">Please select a rating</div>
+        </div>
+        <div class="mb-3">
+          <textarea
+            class="form-control"
+            id="feedbackText"
+            rows="4"
+            placeholder="Your Feedback"
+            required
+          ></textarea>
+          <div class="invalid-feedback">Please provide your feedback</div>
+        </div>
+        <button type="submit" class="btn btn-custom">Submit Feedback</button>
+      </form>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Thank You!</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Your feedback has been submitted successfully!
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-custom"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="feedback.js"></script>
+  </body>
+</html>

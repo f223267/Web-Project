@@ -1,0 +1,195 @@
+/* General Styles */
+body {
+  background: url("img3.webp") no-repeat center center/cover;
+  color: white;
+  min-height: 100vh;
+  padding-top: 80px;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border-radius: 0;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff4500 !important;
+}
+
+.navbar-nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  background-color: white;
+  color: #ff4500;
+  box-shadow: 0 0 10px rgba(255, 69, 0, 0.5);
+}
+
+.login-btn {
+  background-color: #ff4500;
+  color: white;
+  padding: 8px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: white;
+  color: #ff4500;
+  box-shadow: 0 0 10px rgba(255, 69, 0, 0.5);
+}
+
+/* Services Container */
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 69, 0, 0.5);
+  backdrop-filter: blur(10px);
+  animation: fadeIn 1s ease;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #ff4500;
+  font-size: 2.2rem;
+}
+
+/* Service Cards */
+.card {
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 0;
+  text-align: center;
+  color: white;
+  transition: all 0.3s ease;
+  height: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  background: rgba(255, 69, 0, 0.9);
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(255, 69, 0, 0.4);
+}
+
+.card i {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #ff4500;
+  transition: all 0.3s ease;
+}
+
+.card:hover i {
+  color: white;
+}
+
+.card h4 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin-bottom: 25px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Custom Button */
+.btn-custom {
+  background-color: #ff4500;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  display: block;
+}
+
+.btn-custom:hover {
+  background-color: white;
+  color: #ff4500;
+  box-shadow: 0 0 15px rgba(255, 69, 0, 0.7);
+}
+
+.btn-custom:active {
+  transform: translateY(1px);
+}
+
+/* Modal */
+.modal-content {
+  background: linear-gradient(135deg, #222, #111);
+  color: white;
+  border-radius: 15px;
+  border: 1px solid #ff4500;
+}
+
+.modal-header {
+  border-bottom: 1px solid #444;
+}
+
+.modal-footer {
+  border-top: 1px solid #444;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+      padding: 20px;
+  }
+  
+  .card {
+      margin-bottom: 20px;
+  }
+  
+  .row.g-4 {
+      --bs-gutter-y: 1.5rem;
+  }
+}
+
+/* Card spacing */
+.row.g-4 {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 1.5rem;
+}

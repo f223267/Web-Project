@@ -1,0 +1,17 @@
+{
+  "hello": "Hello there! Welcome to My Gym. How can I assist you today?",
+  "hi": "Hi! What can I do for you today?",
+  "hours": "Our gym is open from 6:00 AM to 10:00 PM, seven days a week!",
+  "opening times": "We're open daily from 6 AM to 10 PM, including weekends and holidays.",
+  "membership": "We offer several membership options: 1-month ($50), 3-month ($120), and annual ($400). Which one interests you?",
+  "price": "Our memberships start at $50 per month with discounts for longer commitments. Would you like more details?",
+  "trainer": "We have certified personal trainers available. Sessions start at $60/hour. Would you like to book an appointment?",
+  "equipment": "We have a full range of equipment including cardio machines, free weights, resistance machines, and functional training areas.",
+  "classes": "We offer yoga, spinning, HIIT, Zumba, and strength training classes. The schedule is available at the front desk.",
+  "location": "We're located at 123 Fitness Street, in the city center. Easy access by bus and subway!",
+  "contact": "You can reach us at (555) 123-4567 or info@mygym.com. Our staff is happy to help!",
+  "thanks": "You're welcome! Is there anything else I can help you with?",
+  "thank you": "My pleasure! Let me know if you have any other questions.",
+  "bye": "Goodbye! Remember to stay hydrated and keep up with your fitness goals!",
+  "goodbye": "See you soon at the gym! Don't hesitate to come back if you have more questions."
+}
